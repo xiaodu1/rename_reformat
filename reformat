@@ -1,0 +1,15 @@
+#coding=utf-8
+import os
+import string
+dirName = "/home/zico/桌面/dataset/moth/"   
+li=os.listdir(dirName)
+for filename in li:
+ newname = filename
+ newname = newname.split(".")
+ if newname[-1]=="JPEG":
+  newname[-1]="jpg"
+  newname = str.join(".",newname) #这里要用str.join
+  filename = dirName+filename
+  newname = dirName+newname
+  os.rename(filename,newname)
+  print(newname,"updated successfully")
