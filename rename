@@ -1,3 +1,4 @@
+#coding=utf-8
 import os
 path = "/home/zico/桌面/dataset/moth"
 filelist = os.listdir(path) #该文件夹下所有的文件（包括文件夹）
